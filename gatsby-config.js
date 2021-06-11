@@ -12,6 +12,12 @@ module.exports = {
   pathPrefix: '/gatsby-starter-ecommerce',
   plugins: [
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '2466569493611325',
+      },
+    },
+    {
       resolve: '@moltin/gatsby-source-moltin',
       options: {
         client_id:
